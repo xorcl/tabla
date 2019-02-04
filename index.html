@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XOR Truth Table</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th {
+            border-bottom: black 1px solid;
+        }
+
+        .result {
+            border-left: black 1px solid;
+        }
+
+        td, th {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+            <div class="table">
+                <table>
+                    <thead>
+                        <th>\(A\)</th>
+                        <th>\(B\)</th>
+                        <th class="result">\(A \oplus   B\)</th>
+                    </thead>
+                    <tr>
+                        <td>\(T\)</td>
+                        <td>\(T\)</td>
+                        <td class="result">\(F\)</td>
+                    </tr>
+                    <tr>
+                        <td>\(T\)</td>
+                        <td>\(F\)</td>
+                        <td class="result">\(T\)</td>
+                    </tr>
+                    <tr>
+                        <td>\(F\)</td>
+                        <td>\(T\)</td>
+                        <td class="result">\(T\)</td>
+                    </tr>
+                    <tr>
+                        <td>\(F\)</td>
+                        <td>\(F\)</td>
+                        <td class="result">\(F\)</td>
+                    </tr>
+                </table>
+            </div>
+    </div>   
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          CommonHTML: {
+            scale: 200
+          }
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+</body>
+</html>
